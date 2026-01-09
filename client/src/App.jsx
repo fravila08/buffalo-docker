@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
   useEffect(()=>{
     const sayHello = async() => {
-      let resp = await axios.get("http://localhost/api/")
+      let resp = await axios.get("http://3.138.151.127/api/")
       console.log(resp.data)
     }
     sayHello()
